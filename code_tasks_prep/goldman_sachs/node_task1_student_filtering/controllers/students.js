@@ -11,4 +11,36 @@ const { Op } = require("sequelize");
 // 5. Order results by id ASC.
 // 6. Return HTTP 200 OK with array of matching students.
 
-module.exports = {};
+const getStudents = async (req, res) => {
+    try {
+        const { search, marksLow, marksHigh } = req.query;
+
+        if ((marksLow && !marksHigh) || (!marksLow && marksHigh)) {
+            return res.status(400).send();
+        }
+
+        const where = {};
+
+        if (search) {
+            where.name = { [Op.like]: `%${search}%` }
+        }
+
+        if (marksLow && marksHigh) {
+            where.marks = {
+                [Op.gt]: Number(marksLow),
+                [Op.lt]: Number(marksHigh)
+            }
+        }
+
+        const students = await Students.findAll({
+            where,
+            order: [['id', 'ASC']]
+        })
+
+        return res.status(200).json(students)
+    } catch (error) {
+        return res.status(500).json({ error: error.message });
+    }
+}
+
+module.exports = { getStudents };

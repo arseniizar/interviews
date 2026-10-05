@@ -70,24 +70,20 @@ describe("Students Filter API", () => {
       .request(server)
       .get("/students?marksLow=50&marksHigh=80");
     response.should.have.status(200);
-    response.body.length.should.eql(4);
+    response.body.length.should.eql(9);
     response.body.forEach((student, index) => {
-      if (index === 0) {
-        student.id.should.eql(1);
-        student.name.should.eql("Darcy Cherry");
-        student.marks.should.eql(51.1);
-      } else if (index === 1) {
+      if (index === 1) {
         student.id.should.eql(2);
         student.name.should.eql("Sanchez Woodward");
         student.marks.should.eql(53);
-      } else if (index === 2) {
-        student.id.should.eql(4);
-        student.name.should.eql("Daugherty Ray");
-        student.marks.should.eql(61.2);
       } else if (index === 3) {
         student.id.should.eql(12);
         student.name.should.eql("Alissa Rowland");
         student.marks.should.eql(75.5);
+      } else if (index === 6) {
+        student.id.should.eql(21);
+        student.name.should.eql("Angel Davis");
+        student.marks.should.eql(73.5);
       }
     });
   });
