@@ -1,0 +1,19 @@
+{
+  "name": "students-filter-api",
+  "version": "1.0.0",
+  "description": "Goldman Sachs Students Filter API Challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test/index.spec.js --exit"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.4.0"
+  }
+}
