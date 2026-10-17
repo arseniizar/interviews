@@ -2,6 +2,43 @@
 
 Curated solutions, patterns, and implementations for technical coding interviews across Data Structures & Algorithms, Systems, and Backend Engineering.
 
+<p align="center">
+  <a href="https://leetcode.com/u/arseniizar/">
+    <img src="https://img.shields.io/badge/LeetCode-arseniizar-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" />
+  </a>
+  <a href="https://neetcode.io/practice">
+    <img src="https://img.shields.io/badge/NeetCode%2075-55%2F75%20(73%25)-22c55e?style=for-the-badge&logo=target" alt="NeetCode 75" />
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://leetcode.com/u/arseniizar/">
+    <img src="https://leetcard.jacoblin.cool/arseniizar?theme=dark&font=baloo&ext=activity" alt="Arsenii Zarudniuk LeetCode Stats" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Total%20Solved%20in%20Repo-55-blue?style=flat-square" alt="Total Solved" />
+  <img src="https://img.shields.io/badge/Easy-22-22c55e?style=flat-square" alt="Easy" />
+  <img src="https://img.shields.io/badge/Medium-27-f59e0b?style=flat-square" alt="Medium" />
+  <img src="https://img.shields.io/badge/Hard-6-ef4444?style=flat-square" alt="Hard" />
+</p>
+
+---
+
+## Progress Overview
+
+| Metric | Status | Highlights |
+| :--- | :--- | :--- |
+| **Repo Solutions** | **55 Problems** | Tested, runnable with unit assertions |
+| **NeetCode 75 Pace** | **73% Completed (55/75)** | High-frequency patterns for Google & Meta |
+| 🟢 **Easy** | 22 solved | Fast pattern verification & primitives |
+| 🟡 **Medium** | 27 solved | Core interview difficulty (Trie, DFS/BFS, Backtracking, Slid. Window) |
+| 🔴 **Hard** | 6 solved | Trapping Water, Word Search II, Merge k Sorted Lists, Median |
+
 ---
 
 ## Problems by Topic
