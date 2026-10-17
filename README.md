@@ -1,6 +1,6 @@
-# LeetCode Solutions
+# Technical Interview Preparation (`interviews`)
 
-Solutions to LeetCode problems organized by topic and pattern.
+Curated solutions, patterns, and implementations for technical coding interviews across Data Structures & Algorithms, Systems, and Backend Engineering.
 
 ---
 
