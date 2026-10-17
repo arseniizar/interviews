@@ -44,3 +44,6 @@ target/
 *.sqlite3
 *.db
 *.log
+
+# AI Agents & IDE metadata
+.agents/
