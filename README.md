@@ -29,18 +29,6 @@ Curated solutions, patterns, and implementations for technical coding interviews
 
 ---
 
-## Progress Overview
-
-| Metric | Status | Highlights |
-| :--- | :--- | :--- |
-| **Repo Solutions** | **61 Problems** | Tested, runnable with unit assertions |
-| **NeetCode 75 Pace** | **81% Completed (61/75)** | High-frequency patterns for Google & Meta |
-| 🟢 **Easy** | 25 solved | Fast pattern verification & primitives |
-| 🟡 **Medium** | 30 solved | Core interview difficulty (Trie, DFS/BFS, Backtracking, Slid. Window) |
-| 🔴 **Hard** | 6 solved | Trapping Water, Word Search II, Merge k Sorted Lists, Median |
-
----
-
 ## Problems by Topic
 
 ### 1. [Arrays & Hashing](./01_arrays_and_hashing/)
