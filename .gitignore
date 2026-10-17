@@ -47,3 +47,8 @@ target/
 
 # AI Agents & IDE metadata
 .agents/
+AGENTS.md
+
+# Company assessment prep (keep local only)
+code_tasks_prep/
+
