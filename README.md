@@ -16,7 +16,7 @@ Curated solutions, patterns, and implementations for technical coding interviews
 
 <p align="center">
   <a href="https://leetcode.com/u/arseniizar/">
-    <img src="https://leetcard.jacoblin.cool/arseniizar?theme=dark&font=baloo&ext=activity" alt="Arsenii Zarudniuk LeetCode Stats" />
+    <img src="https://leetcard.jacoblin.cool/arseniizar?theme=dark&font=baloo" alt="Arsenii Zarudniuk LeetCode Stats" />
   </a>
 </p>
 
