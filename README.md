@@ -7,7 +7,7 @@ Curated solutions, patterns, and implementations for technical coding interviews
     <img src="https://img.shields.io/badge/LeetCode-arseniizar-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" />
   </a>
   <a href="https://neetcode.io/practice">
-    <img src="https://img.shields.io/badge/NeetCode%2075-45%2F75%20(60%25)-22c55e?style=for-the-badge&logo=target" alt="NeetCode 75" />
+    <img src="https://img.shields.io/badge/NeetCode%2075-57%2F75%20-22c55e?style=for-the-badge&logo=target" alt="NeetCode 75" />
   </a>
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
