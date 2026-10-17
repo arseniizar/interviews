@@ -53,6 +53,7 @@ Solutions to LeetCode problems organized by topic and pattern.
 * [Linked List Cycle](./05_linked_list/141_linked_list_cycle.py) (Easy) - Floyd's cycle detection
 * [Reverse Linked List](./05_linked_list/206_reverse_linked_list.py) (Easy) - Iterative pointer reversal
 * [Reorder List](./05_linked_list/143_reorder_list.py) (Medium) - Fast/slow middle finding, in-place reversal, and zipper merge
+* [Merge k Sorted Lists](./05_linked_list/023_merge_k_sorted_lists.py) (Hard) - Sequential merge / divide and conquer / min-heap
 
 ### 7. [Trees](./07_trees/)
 * [Same Tree](./07_trees/100_same_tree.py) (Easy) - Recursive comparison
@@ -70,6 +71,21 @@ Solutions to LeetCode problems organized by topic and pattern.
 
 ### 10. [Backtracking](./06_backtracking/)
 * [Letter Combinations of a Phone Number](./06_backtracking/017_letter_combinations_of_a_phone_number.py) (Medium) - Iterative expansion and recursion
+* [Combination Sum](./06_backtracking/039_combination_sum.py) (Medium) - Decision tree with element reuse and undo
+* [Word Search](./06_backtracking/079_word_search.py) (Medium) - 2D grid DFS backtracking with visited set
+* [Word Search II](./06_backtracking/212_word_search_ii.py) (Hard) - Trie prefix tree combined with 2D grid backtracking
+
+### 11. [Trie](./10_trie/)
+* [Implement Trie (Prefix Tree)](./10_trie/208_implement_trie_prefix_tree.py) (Medium) - Prefix tree with insert, search, and startsWith
+* [Design Add and Search Words Data Structure](./10_trie/211_design_add_and_search_words_data_structure.py) (Medium) - Trie with DFS wildcard matching for '.'
+
+### 12. [Graphs](./11_graphs/)
+* [Number of Islands](./11_graphs/200_number_of_islands.py) (Medium) - 2D grid Flood Fill (DFS sinking)
+* [Clone Graph](./11_graphs/133_clone_graph.py) (Medium) - Deep copy of undirected graph using DFS and hash map
+
+### 13. [Intervals](./09_intervals/)
+* [Merge Intervals](./09_intervals/056_merge_intervals.py) (Medium) - Sort intervals by start time and merge overlaps
+* [Insert Interval](./09_intervals/057_insert_interval.py) (Medium) - Binary insert and linear overlap merge
 
 ---
 
