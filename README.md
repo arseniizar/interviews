@@ -21,9 +21,9 @@ Curated solutions, patterns, and implementations for technical coding interviews
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total%20Solved%20in%20Repo-55-blue?style=flat-square" alt="Total Solved" />
-  <img src="https://img.shields.io/badge/Easy-22-22c55e?style=flat-square" alt="Easy" />
-  <img src="https://img.shields.io/badge/Medium-27-f59e0b?style=flat-square" alt="Medium" />
+  <img src="https://img.shields.io/badge/Total%20Solved%20in%20Repo-61-blue?style=flat-square" alt="Total Solved" />
+  <img src="https://img.shields.io/badge/Easy-25-22c55e?style=flat-square" alt="Easy" />
+  <img src="https://img.shields.io/badge/Medium-30-f59e0b?style=flat-square" alt="Medium" />
   <img src="https://img.shields.io/badge/Hard-6-ef4444?style=flat-square" alt="Hard" />
 </p>
 
@@ -33,10 +33,10 @@ Curated solutions, patterns, and implementations for technical coding interviews
 
 | Metric | Status | Highlights |
 | :--- | :--- | :--- |
-| **Repo Solutions** | **55 Problems** | Tested, runnable with unit assertions |
-| **NeetCode 75 Pace** | **73% Completed (55/75)** | High-frequency patterns for Google & Meta |
-| 🟢 **Easy** | 22 solved | Fast pattern verification & primitives |
-| 🟡 **Medium** | 27 solved | Core interview difficulty (Trie, DFS/BFS, Backtracking, Slid. Window) |
+| **Repo Solutions** | **61 Problems** | Tested, runnable with unit assertions |
+| **NeetCode 75 Pace** | **81% Completed (61/75)** | High-frequency patterns for Google & Meta |
+| 🟢 **Easy** | 25 solved | Fast pattern verification & primitives |
+| 🟡 **Medium** | 30 solved | Core interview difficulty (Trie, DFS/BFS, Backtracking, Slid. Window) |
 | 🔴 **Hard** | 6 solved | Trapping Water, Word Search II, Merge k Sorted Lists, Median |
 
 ---
@@ -54,7 +54,9 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Valid Anagram](./01_arrays_and_hashing/242_valid_anagram.py) (Easy) - Character count with Counter
 * [Top K Frequent Elements](./01_arrays_and_hashing/347_top_k_frequent_elements.py) (Medium) - Frequency count with Counter
 * [Contiguous Array](./01_arrays_and_hashing/525_contiguous_array.py) (Medium) - Prefix sum with 0 mapped to -1
+* [Maximum Subarray](./01_arrays_and_hashing/053_maximum_subarray.py) (Medium) - Kadane's algorithm for maximum contiguous sum
 * [Concatenation of Array](./01_arrays_and_hashing/1929_concatenation_of_array.py) (Easy) - List concatenation
+* [Fizz Buzz](./01_arrays_and_hashing/412_fizz_buzz.py) (Easy) - Classical modulo simulation
 
 ### 2. [Two Pointers](./02_two_pointers/)
 * [Container With Most Water](./02_two_pointers/011_container_with_most_water.py) (Medium) - Inward two pointers with greedy area check
@@ -72,6 +74,7 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Minimum Window Substring](./03_sliding_window/076_minimum_window_substring.py) (Hard) - Dynamic sliding window with debt counter
 * [Sliding Window Maximum](./03_sliding_window/239_sliding_window_maximum.py) (Hard) - Monotonic deque tracking window maximums
 * [Best Time to Buy and Sell Stock](./03_sliding_window/121_best_time_to_buy_and_sell_stock.py) (Easy) - One-pass minimum tracking
+* [Minimum Difference Between Highest and Lowest of K Scores](./03_sliding_window/1984_minimum_difference_between_highest_and_lowest_of_k_scores.py) (Easy) - Sort and contiguous window of size k
 
 ### 4. [Stack](./04_stack/)
 * [Valid Parentheses](./04_stack/020_valid_parentheses.py) (Easy) - Stack matching with expected brackets
@@ -100,6 +103,7 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Diameter of Binary Tree](./07_trees/543_diameter_of_binary_tree.py) (Easy) - DFS max path
 
 ### 8. [Heap / Priority Queue](./08_heap_priority_queue/)
+* [K Closest Points to Origin](./08_heap_priority_queue/973_k_closest_points_to_origin.py) (Medium) - Euclidean distance with min-heap
 * [Kth Largest Element in a Stream](./08_heap_priority_queue/703_kth_largest_element_in_a_stream.py) (Easy) - Min-heap of size k
 * [Last Stone Weight](./08_heap_priority_queue/1046_last_stone_weight.py) (Easy) - Max-heap with negated values
 
@@ -107,6 +111,7 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Longest Palindromic Substring](./04_palindromes/005_longest_palindromic_substring.py) (Medium) - Expand around center
 
 ### 10. [Backtracking](./06_backtracking/)
+* [Subsets](./06_backtracking/078_subsets.py) (Medium) - Decision tree generating power set
 * [Letter Combinations of a Phone Number](./06_backtracking/017_letter_combinations_of_a_phone_number.py) (Medium) - Iterative expansion and recursion
 * [Combination Sum](./06_backtracking/039_combination_sum.py) (Medium) - Decision tree with element reuse and undo
 * [Word Search](./06_backtracking/079_word_search.py) (Medium) - 2D grid DFS backtracking with visited set
@@ -123,6 +128,9 @@ Curated solutions, patterns, and implementations for technical coding interviews
 ### 13. [Intervals](./09_intervals/)
 * [Merge Intervals](./09_intervals/056_merge_intervals.py) (Medium) - Sort intervals by start time and merge overlaps
 * [Insert Interval](./09_intervals/057_insert_interval.py) (Medium) - Binary insert and linear overlap merge
+
+### 14. [Bit Manipulation](./12_bit_manipulation/)
+* [Sort Integers by The Number of 1 Bits](./12_bit_manipulation/1356_sort_integers_by_the_number_of_1_bits.py) (Easy) - Hamming weight sorting via bit_count()
 
 ---
 
