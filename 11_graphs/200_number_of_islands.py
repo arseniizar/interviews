@@ -18,7 +18,6 @@ Space Complexity: O(m * n) worst case recursion call stack for an entirely fille
 
 from typing import List
 
-
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         if not grid or not grid[0]:
@@ -29,7 +28,6 @@ class Solution:
         count = 0
 
         def dfs(row: int, col: int):
-            # Base Case: Stop if out of grid bounds or hit water ('0')
             if (
                 row < 0
                 or row >= ROWS
@@ -39,24 +37,20 @@ class Solution:
             ):
                 return
 
-            # Sink land: mark current cell as water '0'
             grid[row][col] = "0"
 
-            # Flood fill adjacent cells in 4 directions
-            dfs(row + 1, col)  # down
-            dfs(row - 1, col)  # up
-            dfs(row, col + 1)  # right
-            dfs(row, col - 1)  # left
+            dfs(row + 1, col)
+            dfs(row - 1, col)
+            dfs(row, col + 1)
+            dfs(row, col - 1)
 
-        # Scan every cell on the board
         for r in range(ROWS):
             for c in range(COLS):
                 if grid[r][c] == "1":
                     count += 1
-                    dfs(r, c)  # Sink the entire connected island
+                    dfs(r, c)
 
         return count
-
 
 if __name__ == "__main__":
     sol = Solution()

@@ -46,13 +46,11 @@ class Solution:
                 elif t == "*":
                     stack.append(a * b)
                 elif t == "/":
-                    # In Python, int(a / b) truncates towards zero (like C++)
                     stack.append(int(a / b))
             else:
                 stack.append(int(t))
 
         return stack[0]
-
 
 if __name__ == "__main__":
     sol = Solution()

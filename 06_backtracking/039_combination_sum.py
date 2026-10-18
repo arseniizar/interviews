@@ -12,35 +12,28 @@ Space Complexity: O(target / min_val) for recursion call stack
 
 from typing import List
 
-
 class Solution:
     def combinationSum(self, nums: List[int], target: int) -> List[List[int]]:
         res = []
         subset = []
 
         def dfs(i: int, total: int):
-            # Base Case 1: Found valid combination
             if total == target:
                 res.append(subset.copy())
                 return
 
-            # Base Case 2: Exceeded target or index out of bounds
             if total > target or i >= len(nums):
                 return
 
-            # Choice 1: Include nums[i] (can reuse nums[i], stay at index i)
             subset.append(nums[i])
             dfs(i, total + nums[i])
 
-            # Backtrack (Undo choice)
             subset.pop()
 
-            # Choice 2: Exclude nums[i] and move to next candidate (i + 1)
             dfs(i + 1, total)
 
         dfs(0, 0)
         return res
-
 
 if __name__ == "__main__":
     sol = Solution()

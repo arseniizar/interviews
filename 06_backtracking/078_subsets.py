@@ -16,7 +16,6 @@ Space Complexity: O(n) for the recursion call stack.
 
 from typing import List
 
-
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []
@@ -27,19 +26,15 @@ class Solution:
                 res.append(subset.copy())
                 return
 
-            # Choice 1: Include nums[i]
             subset.append(nums[i])
             dfs(i + 1)
 
-            # Undo choice (Backtrack)
             subset.pop()
 
-            # Choice 2: Exclude nums[i]
             dfs(i + 1)
 
         dfs(0)
         return res
-
 
 if __name__ == "__main__":
     sol = Solution()

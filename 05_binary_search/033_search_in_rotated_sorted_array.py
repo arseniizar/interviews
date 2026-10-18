@@ -53,13 +53,11 @@ class Solution:
             if nums[mid] == target:
                 return mid
 
-            # Left half is sorted
             if nums[l] <= nums[mid]:
                 if nums[l] <= target < nums[mid]:
                     r = mid - 1
                 else:
                     l = mid + 1
-            # Right half is sorted
             else:
                 if nums[mid] < target <= nums[r]:
                     l = mid + 1
@@ -67,7 +65,6 @@ class Solution:
                     r = mid - 1
 
         return -1
-
 
 if __name__ == "__main__":
     sol = Solution()

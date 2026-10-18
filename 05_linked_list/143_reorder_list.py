@@ -53,19 +53,16 @@ class ListNode:
         self.val = val
         self.next = next
 
-
 class Solution:
     def reorderList(self, head: ListNode | None) -> None:
         if not head or not head.next:
             return
 
-        # 1. Find middle of list
         slow, fast = head, head
         while fast.next and fast.next.next:
             slow = slow.next
             fast = fast.next.next
 
-        # 2. Reverse second half
         prev = None
         curr = slow.next
         slow.next = None
@@ -76,7 +73,6 @@ class Solution:
             prev = curr
             curr = nxt
 
-        # 3. Merge alternating halves
         first, second = head, prev
         while second:
             tmp1 = first.next
@@ -88,14 +84,12 @@ class Solution:
             first = tmp1
             second = tmp2
 
-
 def to_list(node: ListNode | None) -> list[int]:
     res = []
     while node:
         res.append(node.val)
         node = node.next
     return res
-
 
 def to_linked_list(lst: list[int]) -> ListNode | None:
     dummy = ListNode(0)
@@ -104,7 +98,6 @@ def to_linked_list(lst: list[int]) -> ListNode | None:
         curr.next = ListNode(x)
         curr = curr.next
     return dummy.next
-
 
 if __name__ == "__main__":
     sol = Solution()

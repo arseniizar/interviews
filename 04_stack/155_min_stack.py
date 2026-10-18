@@ -35,7 +35,6 @@ public:
 
 class MinStack:
     def __init__(self):
-        # Stores tuples: (val, min_at_this_level)
         self.stack = []
 
     def push(self, val: int) -> None:
@@ -52,7 +51,6 @@ class MinStack:
 
     def getMin(self) -> int:
         return self.stack[-1][1]
-
 
 if __name__ == "__main__":
     ms = MinStack()

@@ -18,8 +18,6 @@ class Solution:
             res = [prev + letter for prev in res for letter in phone[d]]
         return res
 
-
-# Recursive alternative (Backtracking):
 class SolutionBacktracking:
     def letterCombinations(self, digits: str) -> list[str]:
         if not digits:
@@ -41,7 +39,6 @@ class SolutionBacktracking:
 
         backtrack(0, "")
         return res
-
 
 if __name__ == "__main__":
     s = Solution()

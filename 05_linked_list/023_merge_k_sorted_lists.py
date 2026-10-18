@@ -10,12 +10,10 @@ Approaches:
 
 from typing import Optional, List
 
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-
 
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
@@ -39,9 +37,7 @@ class Solution:
             head = merge_two_lists(lists[i], lists[i - 1])
             lists[i] = head
 
-        # The fully merged linked list head ends up at the last index:
         return lists[-1]
-
 
 def to_list(node: Optional[ListNode]) -> list[int]:
     res = []
@@ -50,7 +46,6 @@ def to_list(node: Optional[ListNode]) -> list[int]:
         node = node.next
     return res
 
-
 def to_linked_list(lst: list[int]) -> Optional[ListNode]:
     dummy = ListNode(0)
     curr = dummy
@@ -58,7 +53,6 @@ def to_linked_list(lst: list[int]) -> Optional[ListNode]:
         curr.next = ListNode(x)
         curr = curr.next
     return dummy.next
-
 
 if __name__ == "__main__":
     sol = Solution()

@@ -12,7 +12,6 @@ Space Complexity: O(L) for recursion stack.
 
 from typing import List
 
-
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         num_rows = len(board)
@@ -20,43 +19,35 @@ class Solution:
         visited_cells = set()
 
         def search_from(row: int, col: int, char_index: int) -> bool:
-            # 1. Base Case: Successfully matched all characters
             if char_index == len(word):
                 return True
 
-            # 2. Base Case: Out of grid bounds
             if row < 0 or row >= num_rows or col < 0 or col >= num_cols:
                 return False
 
-            # 3. Base Case: Character mismatch or cell already visited in current path
             if board[row][col] != word[char_index] or (row, col) in visited_cells:
                 return False
 
-            # --- Step On (Mark visited) ---
             visited_cells.add((row, col))
 
-            # --- Explore 4 Directions for next character ---
             next_char = char_index + 1
             word_found = (
-                search_from(row + 1, col, next_char)  # down
-                or search_from(row - 1, col, next_char)  # up
-                or search_from(row, col + 1, next_char)  # right
-                or search_from(row, col - 1, next_char)  # left
+                search_from(row + 1, col, next_char)
+                or search_from(row - 1, col, next_char)
+                or search_from(row, col + 1, next_char)
+                or search_from(row, col - 1, next_char)
             )
 
-            # --- Step Off (Backtrack / Undo mark) ---
             visited_cells.remove((row, col))
 
             return word_found
 
-        # Try starting search from every cell on the board
         for r in range(num_rows):
             for c in range(num_cols):
                 if search_from(r, c, 0):
                     return True
 
         return False
-
 
 if __name__ == "__main__":
     sol = Solution()

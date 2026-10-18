@@ -14,12 +14,10 @@ Time Complexity:
 Space Complexity: O(N * L) for storing words in the Trie.
 """
 
-
 class TrieNode:
     def __init__(self):
         self.children: dict[str, TrieNode] = {}
         self.is_end_of_word: bool = False
-
 
 class WordDictionary:
     def __init__(self):
@@ -35,25 +33,20 @@ class WordDictionary:
 
     def search(self, word: str) -> bool:
         def dfs(index: int, node: TrieNode) -> bool:
-            # 1. Base Case: Reached the end of the search word
             if index == len(word):
                 return node.is_end_of_word
 
             char = word[index]
 
-            # 2. Wildcard Case: '.' matches ANY child node
             if char == ".":
                 return any(dfs(index + 1, child) for child in node.children.values())
 
-            # 3. Regular Character Case: Character does not exist in children
             if char not in node.children:
                 return False
 
-            # 4. Step down to matching child
             return dfs(index + 1, node.children[char])
 
         return dfs(0, self.root)
-
 
 if __name__ == "__main__":
     wd = WordDictionary()

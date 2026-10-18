@@ -12,12 +12,9 @@ Space Complexity: O(n) for sorted array
 
 from typing import List
 
-
 class Solution:
     def sortByBits(self, arr: List[int]) -> List[int]:
-        # Sort key is tuple: (number of 1 bits, original value)
         return sorted(arr, key=lambda x: (x.bit_count(), x))
-
 
 if __name__ == "__main__":
     sol = Solution()

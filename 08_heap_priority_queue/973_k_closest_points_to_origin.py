@@ -18,10 +18,8 @@ Space Complexity: O(n) for the heap.
 import heapq
 from typing import List
 
-
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
-        # min-heap storing (distance_squared, x, y)
         min_heap = [(x ** 2 + y ** 2, x, y) for x, y in points]
         heapq.heapify(min_heap)
 
@@ -31,7 +29,6 @@ class Solution:
             res.append([x, y])
 
         return res
-
 
 if __name__ == "__main__":
     sol = Solution()

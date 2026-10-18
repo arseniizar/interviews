@@ -47,7 +47,6 @@ class Solution:
         res = []
 
         for i in range(len(nums) - 2):
-            # Skip duplicate values for the first element
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
@@ -64,7 +63,6 @@ class Solution:
                 else:
                     res.append([nums[i], nums[left], nums[right]])
 
-                    # Skip duplicate values for left and right pointers
                     while left < right and nums[left] == nums[left + 1]:
                         left += 1
                     while left < right and nums[right] == nums[right - 1]:
@@ -74,7 +72,6 @@ class Solution:
                     right -= 1
 
         return res
-
 
 if __name__ == "__main__":
     s = Solution()

@@ -17,12 +17,10 @@ Space Complexity: O(V) for the hash map and recursion stack.
 
 from typing import Optional, List
 
-
 class Node:
     def __init__(self, val: int = 0, neighbors: Optional[List["Node"]] = None):
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
-
 
 class Solution:
     def cloneGraph(self, node: Optional[Node]) -> Optional[Node]:
@@ -32,22 +30,18 @@ class Solution:
         old_to_new: dict[Node, Node] = {}
 
         def dfs(curr: Node) -> Node:
-            # 1. If copy already exists, return it (breaks cycle)
             if curr in old_to_new:
                 return old_to_new[curr]
 
-            # 2. Create fresh clone and register in map
             copy = Node(curr.val)
             old_to_new[curr] = copy
 
-            # 3. Recursively clone all neighbors
             for neighbor in curr.neighbors:
                 copy.neighbors.append(dfs(neighbor))
 
             return copy
 
         return dfs(node)
-
 
 if __name__ == "__main__":
     sol = Solution()
