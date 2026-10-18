@@ -1,6 +1,6 @@
 # Technical Interview Preparation (`interviews`)
 
-Curated solutions, patterns, and implementations for technical coding interviews across Data Structures & Algorithms, Systems, and Backend Engineering.
+Curated solutions, patterns, and implementations for technical coding interviews across Data Structures and Algorithms, Systems, and Backend Engineering.
 
 <p align="center">
   <a href="https://leetcode.com/u/arseniizar/">
@@ -25,7 +25,7 @@ Curated solutions, patterns, and implementations for technical coding interviews
 
 ## Problems by Topic
 
-### 1. [Arrays & Hashing](./01_arrays_and_hashing/)
+### 1. [Arrays and Hashing](./01_arrays_and_hashing/)
 * [Two Sum](./01_arrays_and_hashing/001_two_sum.py) (Easy) - One-pass hash map
 * [Palindrome Number](./01_arrays_and_hashing/009_palindrome_number.py) (Easy) - Base-10 digit reversal
 * [Roman to Integer](./01_arrays_and_hashing/013_roman_to_integer.py) (Easy) - Subtractive notation
