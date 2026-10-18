@@ -20,12 +20,6 @@ Curated solutions, patterns, and implementations for technical coding interviews
   </a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Total%20Solved%20in%20Repo-71-blue?style=flat-square" alt="Total Solved" />
-  <img src="https://img.shields.io/badge/Easy-26-22c55e?style=flat-square" alt="Easy" />
-  <img src="https://img.shields.io/badge/Medium-39-f59e0b?style=flat-square" alt="Medium" />
-  <img src="https://img.shields.io/badge/Hard-6-ef4444?style=flat-square" alt="Hard" />
-</p>
 
 ---
 
