@@ -21,9 +21,9 @@ Curated solutions, patterns, and implementations for technical coding interviews
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total%20Solved%20in%20Repo-66-blue?style=flat-square" alt="Total Solved" />
+  <img src="https://img.shields.io/badge/Total%20Solved%20in%20Repo-71-blue?style=flat-square" alt="Total Solved" />
   <img src="https://img.shields.io/badge/Easy-26-22c55e?style=flat-square" alt="Easy" />
-  <img src="https://img.shields.io/badge/Medium-34-f59e0b?style=flat-square" alt="Medium" />
+  <img src="https://img.shields.io/badge/Medium-39-f59e0b?style=flat-square" alt="Medium" />
   <img src="https://img.shields.io/badge/Hard-6-ef4444?style=flat-square" alt="Hard" />
 </p>
 
@@ -126,6 +126,13 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [House Robber](./13_1d_dynamic_programming/198_house_robber.py) (Medium) - Recurrence with non-adjacent selection
 * [House Robber II](./13_1d_dynamic_programming/213_house_robber_ii.py) (Medium) - Circular array subproblem reduction
 * [Decode Ways](./13_1d_dynamic_programming/091_decode_ways.py) (Medium) - Forward bottom-up tabulation with single and double digit transitions
+* [Coin Change](./13_1d_dynamic_programming/322_coin_change.py) (Medium) - Bottom-up unbounded knapsack with running minimum
+* [Maximum Product Subarray](./13_1d_dynamic_programming/152_maximum_product_subarray.py) (Medium) - Kadane's variation tracking min and max bounds for sign flips
+* [Word Break](./13_1d_dynamic_programming/139_word_break.py) (Medium) - Bottom-up suffix matching with dictionary validation
+* [Longest Increasing Subsequence](./13_1d_dynamic_programming/300_longest_increasing_subsequence.py) (Medium) - O(n^2) DP checking all subsequent larger candidates
+
+### 16. [2-D Dynamic Programming](./14_2d_dynamic_programming/)
+* [Unique Paths](./14_2d_dynamic_programming/062_unique_paths.py) (Medium) - Grid path counting with space-optimized 1D row transition
 
 ---
 
