@@ -115,7 +115,8 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Longest Increasing Subsequence](./13_1d_dynamic_programming/300_longest_increasing_subsequence.py) (Medium) - O(n^2) DP checking all subsequent larger candidates
 
 ### 16. [2-D Dynamic Programming](./14_2d_dynamic_programming/)
-* [Unique Paths](./14_2d_dynamic_programming/062_unique_paths.py) (Medium) - Grid path counting with space-optimized 1D row transition
+* [Unique Paths](./14_2d_dynamic_programming/062_unique_paths.py) (Medium) - 2D grid path counting with top and left transition
+* [Longest Common Subsequence](./14_2d_dynamic_programming/1143_longest_common_subsequence.py) (Medium) - 2D matrix matching with diagonal and max transitions
 
 ---
 
