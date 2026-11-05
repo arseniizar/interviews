@@ -162,3 +162,12 @@ Each file includes test cases and can be run directly:
 ```bash
 python3 01_arrays_and_hashing/001_two_sum.py
 ```
+
+---
+
+## License & Disclaimer
+
+All source code, algorithm implementations, and test cases in this repository are original work by **Arsenii Zarudniuk** and are licensed under the [MIT License](./LICENSE).
+
+Problem titles, reference numbers, and brief algorithmic summaries are included strictly for educational indexing and study purposes. No paid editorial materials or proprietary platform content are reproduced in this repository.
+
