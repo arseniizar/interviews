@@ -24,7 +24,9 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Product of Array Except Self](./01_arrays_and_hashing/238_product_of_array_except_self.py) (Medium) - Prefix and postfix products
 * [Valid Anagram](./01_arrays_and_hashing/242_valid_anagram.py) (Easy) - Character count with Counter
 * [Top K Frequent Elements](./01_arrays_and_hashing/347_top_k_frequent_elements.py) (Medium) - Frequency count with Counter
+* [Logger Rate Limiter](./01_arrays_and_hashing/359_logger_rate_limiter.py) (Easy) - Hash map tracking next allowed timestamp per message
 * [Contiguous Array](./01_arrays_and_hashing/525_contiguous_array.py) (Medium) - Prefix sum with 0 mapped to -1
+* [Subarray Sum Equals K](./01_arrays_and_hashing/560_subarray_sum_equals_k.py) (Medium) - Prefix sum frequency hash map
 * [Maximum Subarray](./01_arrays_and_hashing/053_maximum_subarray.py) (Medium) - Kadane's algorithm for maximum contiguous sum
 * [Concatenation of Array](./01_arrays_and_hashing/1929_concatenation_of_array.py) (Easy) - List concatenation
 * [Fizz Buzz](./01_arrays_and_hashing/412_fizz_buzz.py) (Easy) - Classical modulo simulation
@@ -37,6 +39,8 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Merge Sorted Array](./02_two_pointers/088_merge_sorted_array.py) (Easy) - Three pointers from the end
 * [Valid Palindrome](./02_two_pointers/125_valid_palindrome.py) (Easy) - Two pointers inwards
 * [Two Sum II - Input Array Is Sorted](./02_two_pointers/167_two_sum_ii_input_array_is_sorted.py) (Medium) - Inward two pointers on sorted array
+* [Move Zeroes](./02_two_pointers/283_move_zeroes.py) (Easy) - Fast and slow pointers in-place swap
+* [Move Pieces to Obtain a String](./02_two_pointers/2337_move_pieces_to_obtain_a_string.py) (Medium) - Two pointers with L/R relative order and index invariants
 
 ### 3. [Sliding Window](./03_sliding_window/)
 * [Longest Substring Without Repeating Characters](./03_sliding_window/003_longest_substring_without_repeating_characters.py) (Medium) - Sliding window with hash set / direct address table
@@ -45,18 +49,27 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Minimum Window Substring](./03_sliding_window/076_minimum_window_substring.py) (Hard) - Dynamic sliding window with debt counter
 * [Sliding Window Maximum](./03_sliding_window/239_sliding_window_maximum.py) (Hard) - Monotonic deque tracking window maximums
 * [Best Time to Buy and Sell Stock](./03_sliding_window/121_best_time_to_buy_and_sell_stock.py) (Easy) - One-pass minimum tracking
+* [Maximum Points You Can Obtain from Cards](./03_sliding_window/1423_maximum_points_you_can_obtain_from_cards.py) (Medium) - Prefix/suffix sliding window of size k
 * [Minimum Difference Between Highest and Lowest of K Scores](./03_sliding_window/1984_minimum_difference_between_highest_and_lowest_of_k_scores.py) (Easy) - Sort and contiguous window of size k
 
 ### 4. [Stack](./04_stack/)
 * [Valid Parentheses](./04_stack/020_valid_parentheses.py) (Easy) - Stack matching with expected brackets
+* [Simplify Path](./04_stack/071_simplify_path.py) (Medium) - Directory stack canonical path resolution
+* [Largest Rectangle in Histogram](./04_stack/084_largest_rectangle_in_histogram.py) (Hard) - Monotonic increasing index stack with sentinel
 * [Evaluate Reverse Polish Notation](./04_stack/150_evaluate_reverse_polish_notation.py) (Medium) - Postfix evaluation with operand stack
 * [Min Stack](./04_stack/155_min_stack.py) (Medium) - Constant-time getMin tracking via pair stack
+* [Decode String](./04_stack/394_decode_string.py) (Medium) - Nested string multiplier stack
+* [Daily Temperatures](./04_stack/739_daily_temperatures.py) (Medium) - Monotonic decreasing stack of indices
+* [Car Fleet](./04_stack/853_car_fleet.py) (Medium) - Reverse position sort with arrival time bottleneck tracking
+* [Number of Visible People in a Queue](./04_stack/1944_number_of_visible_people_in_a_queue.py) (Hard) - Right-to-left monotonic decreasing stack
 
 ### 5. [Binary Search](./05_binary_search/)
 * [Median of Two Sorted Arrays](./05_binary_search/004_median_of_two_sorted_arrays.py) (Hard) - Binary search on partition
 * [Binary Search](./05_binary_search/704_binary_search.py) (Easy) - Classic binary search
 * [Search in Rotated Sorted Array](./05_binary_search/033_search_in_rotated_sorted_array.py) (Medium) - Pivot-guided binary search checking sorted half
 * [Find Minimum in Rotated Sorted Array](./05_binary_search/153_find_minimum_in_rotated_sorted_array.py) (Medium) - Binary search with right bound comparison
+* [Koko Eating Bananas](./05_binary_search/875_koko_eating_bananas.py) (Medium) - Binary search on answer speed range
+* [Capacity To Ship Packages Within D Days](./05_binary_search/1011_capacity_to_ship_packages_within_d_days.py) (Medium) - Binary search on capacity partition bound
 
 ### 6. [Linked List](./05_linked_list/)
 * [Add Two Numbers](./05_linked_list/002_add_two_numbers.py) (Medium) - Column addition with carry
@@ -70,10 +83,16 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Same Tree](./07_trees/100_same_tree.py) (Easy) - Recursive comparison
 * [Maximum Depth of Binary Tree](./07_trees/104_maximum_depth_of_binary_tree.py) (Easy) - DFS height
 * [Balanced Binary Tree](./07_trees/110_balanced_binary_tree.py) (Easy) - Bottom-up height check
+* [Binary Tree Maximum Path Sum](./07_trees/124_binary_tree_maximum_path_sum.py) (Hard) - Bottom-up subtree max gain with global path update
 * [Invert Binary Tree](./07_trees/226_invert_binary_tree.py) (Easy) - Recursive swap
+* [Find Leaves of Binary Tree](./07_trees/366_find_leaves_of_binary_tree.py) (Medium) - Bottom-up node height grouping
 * [Diameter of Binary Tree](./07_trees/543_diameter_of_binary_tree.py) (Easy) - DFS max path
+* [Subtree of Another Tree](./07_trees/572_subtree_of_another_tree.py) (Easy) - Recursive subtree and structure equality check
+* [Delete Nodes And Return Forest](./07_trees/1110_delete_nodes_and_return_forest.py) (Medium) - Post-order DFS disconnecting deleted nodes
+* [Step-By-Step Directions From a Binary Tree Node to Another](./07_trees/2096_step_by_step_directions_from_a_binary_tree_node_to_another.py) (Medium) - Root-to-node DFS paths with lowest common prefix stripping
 
 ### 8. [Heap / Priority Queue](./08_heap_priority_queue/)
+* [Find Median from Data Stream](./08_heap_priority_queue/295_find_median_from_data_stream.py) (Hard) - Two balanced heaps (max-heap lower half, min-heap upper half)
 * [K Closest Points to Origin](./08_heap_priority_queue/973_k_closest_points_to_origin.py) (Medium) - Euclidean distance with min-heap
 * [Kth Largest Element in a Stream](./08_heap_priority_queue/703_kth_largest_element_in_a_stream.py) (Easy) - Min-heap of size k
 * [Last Stone Weight](./08_heap_priority_queue/1046_last_stone_weight.py) (Easy) - Max-heap with negated values
@@ -96,10 +115,19 @@ Curated solutions, patterns, and implementations for technical coding interviews
 ### 12. [Graphs](./11_graphs/)
 * [Number of Islands](./11_graphs/200_number_of_islands.py) (Medium) - 2D grid Flood Fill (DFS sinking)
 * [Clone Graph](./11_graphs/133_clone_graph.py) (Medium) - Deep copy of undirected graph using DFS and hash map
+* [Evaluate Division](./11_graphs/399_evaluate_division.py) (Medium) - Weighted directed graph BFS path product
+* [Battleships in a Board](./11_graphs/419_battleships_in_a_board.py) (Medium) - O(1) space top-left ship head detection
+* [Rotting Oranges](./11_graphs/994_rotting_oranges.py) (Medium) - Multi-source 2D grid BFS
+* [Parallel Courses](./11_graphs/1136_parallel_courses.py) (Medium) - Kahn's topological sort BFS wave counting
+* [Shortest Path in a Grid with Obstacles Elimination](./11_graphs/1293_shortest_path_in_a_grid_with_obstacles_elimination.py) (Hard) - State-space BFS tracking (row, col, remaining_k)
+* [Find All Possible Recipes from Given Supplies](./11_graphs/2115_find_all_possible_recipes_from_given_supplies.py) (Medium) - Topological sort BFS with in-degree dependency graph
 
 ### 13. [Intervals](./09_intervals/)
 * [Merge Intervals](./09_intervals/056_merge_intervals.py) (Medium) - Sort intervals by start time and merge overlaps
 * [Insert Interval](./09_intervals/057_insert_interval.py) (Medium) - Binary insert and linear overlap merge
+* [Meeting Rooms II](./09_intervals/253_meeting_rooms_ii.py) (Medium) - Sort by start time with min-heap tracking earliest end time
+* [My Calendar I](./09_intervals/729_my_calendar_i.py) (Medium) - Half-open interval overlap detection
+* [Corporate Flight Bookings](./09_intervals/1109_corporate_flight_bookings.py) (Medium) - Difference array prefix sum sweep
 
 ### 14. [Bit Manipulation](./12_bit_manipulation/)
 * [Sort Integers by The Number of 1 Bits](./12_bit_manipulation/1356_sort_integers_by_the_number_of_1_bits.py) (Easy) - Hamming weight sorting via bit_count()
@@ -113,10 +141,16 @@ Curated solutions, patterns, and implementations for technical coding interviews
 * [Maximum Product Subarray](./13_1d_dynamic_programming/152_maximum_product_subarray.py) (Medium) - Kadane's variation tracking min and max bounds for sign flips
 * [Word Break](./13_1d_dynamic_programming/139_word_break.py) (Medium) - Bottom-up suffix matching with dictionary validation
 * [Longest Increasing Subsequence](./13_1d_dynamic_programming/300_longest_increasing_subsequence.py) (Medium) - O(n^2) DP checking all subsequent larger candidates
+* [Longest String Chain](./13_1d_dynamic_programming/1048_longest_string_chain.py) (Medium) - Top-down memoized DFS over single-character predecessor deletions
 
 ### 16. [2-D Dynamic Programming](./14_2d_dynamic_programming/)
 * [Unique Paths](./14_2d_dynamic_programming/062_unique_paths.py) (Medium) - 2D grid path counting with top and left transition
+* [Minimum Path Sum](./14_2d_dynamic_programming/064_minimum_path_sum.py) (Medium) - 2D grid minimum cost path DP
+* [Longest Increasing Path in a Matrix](./14_2d_dynamic_programming/329_longest_increasing_path_in_a_matrix.py) (Hard) - Top-down memoized grid DFS over strictly increasing neighbors
 * [Longest Common Subsequence](./14_2d_dynamic_programming/1143_longest_common_subsequence.py) (Medium) - 2D matrix matching with diagonal and max transitions
+
+### 17. [Greedy](./15_greedy/)
+* [Jump Game](./15_greedy/055_jump_game.py) (Medium) - Greedy backward goal shifting
 
 ---
 
