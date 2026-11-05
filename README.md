@@ -4,8 +4,9 @@ Curated solutions, patterns, and implementations for technical coding interviews
 
 
 <p align="center">
+  <img src="./assets/repo_stats.svg" width="48%" alt="Repository Problems Breakdown" />
   <a href="https://leetcode.com/u/arseniizar/">
-    <img src="https://leetcard.jacoblin.cool/arseniizar?theme=dark&font=baloo" alt="Arsenii Zarudniuk LeetCode Stats" />
+    <img src="https://leetcard.jacoblin.cool/arseniizar?theme=dark&font=baloo" width="48%" alt="Arsenii Zarudniuk LeetCode Stats" />
   </a>
 </p>
 
