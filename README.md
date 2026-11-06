@@ -165,7 +165,7 @@ python3 01_arrays_and_hashing/001_two_sum.py
 
 ---
 
-## License & Disclaimer
+## License and Disclaimer
 
 All source code, algorithm implementations, and test cases in this repository are authored and curated by **Arsenii Zarudniuk** (with AI-assisted documentation and test generation) and are licensed under the [MIT License](./LICENSE).
 
